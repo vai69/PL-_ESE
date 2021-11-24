@@ -1,0 +1,80 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: white;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: #FF0000;  
+  opacity:0.7;
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+label{
+  font-size: 20px;
+}
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: skyblue;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> Booking Form</h1> </center>  
+  <hr>  
+  <label><b> To: </b></label>   
+<input type="text"  placeholder= "To" size="15" required />   
+<label><b> From: </b></label>   
+<input type="text" placeholder="From" size="15" required />   
+<label><b> Date: </b></label>    
+<input type="date" required /> <br><br><br>
+<label> Time: </label>    
+<input type="time" required /> 
+
+<div>  
+ 
+ <label ><b>Pick Up Point:</b></label>  
+ <input type="text" placeholder="Pick Up city" required>  
+ 	<label><b>type of seat:</b></label>  
+ <input type="text" placeholder="Type of seat"  required>
+ <label><b>Number of seat:</b></label>  
+ <input type="text" placeholder="Number of seat"  required>
+  
+    
+    <button type="submit" class="registerbtn">Book</button>    
+</form>  
+</body>  
+</html>  
